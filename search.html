@@ -18,17 +18,22 @@
 
 
 </head>
+
 <body>
+  <p id="node-id"></p>
+
   <script type="text/javascript">
     const queryString = window.location.search;
     console.log(queryString);
     const urlParams = new URLSearchParams(queryString);
     const q = urlParams.get('q')
-    var node = document.getElementById('node-id');
-    node.innerHTML("<h1>Results of :"+ q+"</h1>");
-  </script>
-<p id="node-id"></p>
+    document.getElementById("node-id").innerHTML = "<h1>Results of :"+ q+"</h1>";
 
+  </script>
+
+
+<script>
+</script>
 
 </body>
 </html>
