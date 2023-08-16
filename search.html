@@ -19,6 +19,13 @@
 
 </head>
 <body>
+  <script type="text/javascript">
+    const queryString = window.location.search;
+    console.log(queryString);
+    const urlParams = new URLSearchParams(queryString);
+    const q = urlParams.get('q')
+    alert(q);
+  </script>
 
 <h1>Results of keyword1</h1>
 <p>result1</p>
