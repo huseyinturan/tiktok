@@ -24,9 +24,10 @@
     console.log(queryString);
     const urlParams = new URLSearchParams(queryString);
     const q = urlParams.get('q')
-    print("<h1>Results of :"+ q+"</h1>");
+    var node = document.getElementById('node-id');
+    node.innerHTML("<h1>Results of :"+ q+"</h1>");
   </script>
-
+<p id="node-id"></p>
 
 
 </body>
